@@ -11,11 +11,18 @@
 #
 
 def factorial(n):
+    # edge cases
+    if type(n) != int:
+        raise TypeError('Needs to be an integer')
+    if n < 1:
+        raise ValueError('Number needs be a positive number')
     result = 1
 
     for i in range(result, (n + 1)):
-        result = result * 1
-        return result
+        result = result * i
+    return result
 
+# print(factorial('one'))
+# print(factorial(-1))
 print(factorial(5))
-print(factorial(10))
+# print(factorial(10))

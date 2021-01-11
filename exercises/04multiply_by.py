@@ -11,11 +11,17 @@
 #
 # > [5, 10, 15]
 
+def multiply(num1, num2):
+    return num1 * num2
+
 def multiply_by(numbers_list, multiple):
     result = []
     for each_num in numbers_list:
         result.append(each_num * multiple)
 
-        # return result
+    return result
 
-        print(multiply_by([4,6,8,10], 10))
+    # come back to that
+    # result = map(multiply, numbers_list)
+
+print(multiply_by([4,6,8,10], 10))
